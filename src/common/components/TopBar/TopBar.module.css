@@ -1,0 +1,17 @@
+.topBar {
+    background-color: var(--cloud-burst);
+    /* background-color: #2b275a; */
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    padding: 0 0 0 8px;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    p span {
+        /* background-color: var(--artyclick-orange); */
+        color: #ff8412;
+    }
+}

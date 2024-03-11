@@ -1,0 +1,65 @@
+.header {
+    background-color: var(--artyclick-orange);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: white;
+    gap: 4px;
+}
+.backWithSelect {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.back {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location {
+    background-color: var(--artyclick-orange);
+    display: flex;
+    flex-direction: column;
+    p {
+        font-size: 6px;
+        font-weight: 500;
+        height: 7px;
+        padding: 0 4px;
+    }
+    select {
+        border: none;
+        background-color: var(--artyclick-orange);
+        font-size: 12px;
+        font-weight: bold;
+        outline: none;
+        color: white;
+        height: 15px;
+    }
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+    background-color: white;
+    border-radius: 25px;
+    height: 34px;
+    width: 223px;
+    align-items: center;
+    .icon {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    .text {
+        color: var(--dark);
+        font-weight: 800;
+        font-size: 7.69px;
+    }
+}
