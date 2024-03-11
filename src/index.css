@@ -1,13 +1,34 @@
+html {
+    --cloud-burst: #2b275a;
+    --artyclick-orange: #ff8412;
+    --dark: #211f2b;
+}
+/* host not working, so use html */
+/* :host {
+    --cloud-burst: #2b275a;
+    --artyclick-orange: #ff8412;
+} */
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; */
+    font-family: 'League Spartan', sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    /* font-style: normal; */
 }
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
 }
