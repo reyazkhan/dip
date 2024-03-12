@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
-import BackArrow from '../../../assets/BackArrow';
-import Trophy from '../../../assets/Trophy';
-import Flower from '../../../assets/Flower';
-import Achievement from '../../../assets/Achievement';
+import BackArrow from '../../assets/BackArrow';
+import Trophy from '../../assets/Trophy';
+import Flower from '../../assets/Flower';
+import Achievement from '../../assets/Achievement';
 
 const locations: Array<string> = ['Bangalore', 'Delhi', 'Chennai'];
 

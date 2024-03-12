@@ -1,12 +1,17 @@
 import React from 'react';
-import TopBar from '../common/components/TopBar/TopBar';
-import Header from '../common/components/Header/Header';
+import TopBar from '../components/TopBar/TopBar';
+import Header from '../components/Header/Header';
+import FAQ from '../components/faq/faq';
+import ClientReview from '../components/ClientReview/ClientReview';
+
 
 const Screen1 = () => {
     return (
         <div>
             <TopBar />
             <Header />
+            <FAQ/>
+            <ClientReview/>
         </div>
     );
 };
