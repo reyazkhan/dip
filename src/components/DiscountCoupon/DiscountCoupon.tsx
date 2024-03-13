@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './DiscountCoupon.module.css';
+import couponBackground from '../../assets/images/CouponBackground.png';
 
 const DiscountCoupon = () => {
     const couponDataArray = [
@@ -21,16 +22,6 @@ const DiscountCoupon = () => {
     ];
     const [couponData, setCouponData] = useState(couponDataArray);
     const loadMore = () => {
-        // if (couponData.length !== 3) {
-        //     setCouponData([
-        //         ...couponData,
-        //         {
-        //             offerLabel: 'OFFER',
-        //             title: 'Get Rs. 100 discount on bonus fees.',
-        //             code: 'BONUS100',
-        //         },
-        //     ]);
-        // }
         if (couponData.length < couponDataArray.length) {
             setCouponData((prevCoupons) => [
                 ...prevCoupons,
@@ -45,57 +36,49 @@ const DiscountCoupon = () => {
     };
     return (
         <div className={styles.fontKumbSans}>
-            <div
-                style={{
-                    width: '90%',
-                    margin: '40px auto 20px auto',
-                    fontSize: '14px',
-                    fontWeight: 'bolder',
-                    padding: '0 4px',
-                }}
-            >
+            <div className={styles.discountContainer}>
                 <p style={{ color: '#2B275A' }}>
                     <span style={{ color: '#FF8412' }}>Discount </span>Coupons
                 </p>
             </div>
-            <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '12px',
-                    alignItems: 'center',
-                    marginBottom: '40px',
-                }}
-            >
+            <div className={styles.couponsContainer}>
                 {couponData?.map((coup, index) => {
                     return (
-                        <div key={index} className={styles.couponBackground}>
-                            <div className={styles.couponCard}>
-                                <div className={styles.offer}>
-                                    {coup.offerLabel}
-                                </div>
-                                <div className={styles.title}>{coup.title}</div>
-                                <div className={styles.code}>
-                                    <div>Use code "{`${coup.code}`}"</div>
-                                    <button
-                                        onClick={() => removeCoupon(index)}
-                                        style={{
-                                            backgroundColor: '#FF8412',
-                                            borderRadius: '25px',
-                                            padding: '8px 12px',
-                                            border: 'none',
-                                        }}
-                                    >
-                                        <span
-                                            style={{
-                                                fontWeight: 'bolder',
-                                                fontSize: '10px',
-                                                color: 'white',
-                                            }}
+                        // <div key={index} className={styles.couponBackground}>
+                        <div
+                            key={index}
+                            style={{
+                                position: 'relative',
+                                padding: '0 10px',
+                                width: '100%',
+                            }}
+                        >
+                            <img src={couponBackground} alt="" width={'100%'} />
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '0',
+                                    width: '85%',
+                                }}
+                            >
+                                <div className={styles.couponCard}>
+                                    <div className={styles.offer}>
+                                        {coup.offerLabel}
+                                    </div>
+                                    <div className={styles.title}>
+                                        {coup.title}
+                                    </div>
+                                    <div className={styles.code}>
+                                        <div>Use code "{`${coup.code}`}"</div>
+                                        <button
+                                            onClick={() => removeCoupon(index)}
+                                            className={styles.removeBtn}
                                         >
-                                            REMOVE
-                                        </span>
-                                    </button>
+                                            <span className={styles.btnText}>
+                                                REMOVE
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +89,7 @@ const DiscountCoupon = () => {
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    marginBottom: '20px',
+                    margin: '20px',
                 }}
             >
                 <button className={styles.loadMore} onClick={loadMore}>

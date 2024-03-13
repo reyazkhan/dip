@@ -1,7 +1,26 @@
 .fontKumbSans {
     font-family: 'Kumbh Sans';
 }
-
+.discountContainer {
+    width: 90%;
+    margin: 40px auto 20px auto;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 0 4px;
+}
+.couponsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    /* margin-bottom: 40px; */
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 350px) {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+}
 .couponBackground {
     background-image: url('../../assets/images/CouponBackground.png');
     width: 388px;
@@ -12,6 +31,11 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 100%;
+    @media (max-width: 380px) {
+        gap: 8px;
+        padding: 5px 15px;
+    }
 }
 .offer {
     background: var(--artyclick-orange);
@@ -28,6 +52,11 @@
     height: 36px;
     font-weight: bold;
     font-size: 15px;
+    @media (max-width: 380px) {
+        width: 201px;
+        font-size: 12px;
+        height: 25px;
+    }
 }
 .code {
     display: flex;
@@ -36,6 +65,33 @@
     font-weight: bold;
     font-size: 10px;
     align-items: center;
+}
+
+.removeBtn {
+    background-color: #ff8412;
+    border-radius: 25px;
+    padding: 8px 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 380px) {
+        padding: 4px 8px;
+    }
+    /* @media (max-width: 340px) {
+        padding: 2px;
+    } */
+}
+.btnText {
+    font-weight: bolder;
+    font-size: 10px;
+    color: white;
+    @media (max-width: 380px) {
+        font-size: 8px;
+    }
+    /* @media (max-width: 340px) {
+        font-size: 6px;
+    } */
 }
 
 .loadMore {

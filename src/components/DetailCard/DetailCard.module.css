@@ -13,11 +13,11 @@
         margin: 0 auto;
         background-color: white;
         border-radius: 25px;
-        justify-content : center;
+        justify-content: center;
         align-items: center;
         /* padding: 8px; */
-        @media (max-width: 500px ){
-            width:100%;
+        @media (max-width: 500px) {
+            width: 100%;
 
             height: 445px;
         }
@@ -27,9 +27,9 @@
 .cardList {
     padding: 8px;
     width: 100%;
-    display:flex;
-   flex-direction: center;
-   align-items: center;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
 }
 
 .roundedCircle1 {
@@ -40,7 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .patientDetailKey {
@@ -59,40 +58,54 @@
     font-size: 10px;
     color: var(--cloud-burst);
 }
-.drDetails {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    /* justify-content: space-between; */
-    padding: 20px 0;
 
-    @media (max-width: 400px ){
-         gap: 1px;
-
-    }
-}
-
-.patientService{
-    padding: 10px 20px ;
+.patientService {
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     gap: 80px;
-    @media (max-width: 400px ){
+    @media (max-width: 400px) {
         gap: 10px;
-       
-   }
+    }
 }
 
 .profilInfo {
     display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    /* padding-bottom: 10px; */
+
+    /* @media (max-width: 400px) {
+        gap: 0;
+    } */
+}
+
+.dashedLine {
+    display: flex;
     justify-content: center;
-    gap: 4px;
-    paddingBottom: 10px;
+    width: 90%;
+    align-items: center;
+    margin: 0px auto;
+}
+.dashedLine2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 4px auto;
+}
 
-    @media (max-width: 400px ){
-      gap: 0;
+.drDetails {
+    display: flex;
+    /* justify-content: center; */
+    gap: 8px;
+    justify-content: space-between;
+    padding: 20px 0;
 
-   }
+    @media (max-width: 340px) {
+        /* gap: 4px !important; */
+        padding: 6px 0;
+    }
 }
 .drName {
     /* background-color: #9593ad; */
@@ -103,7 +116,7 @@
     color: var(--cloud-burst);
     font-family: 'Kumbh Sans';
     gap: 2px;
-   
+
     p {
         font-size: 14px;
         font-weight: bold;
@@ -112,15 +125,22 @@
         font-size: 8px;
         font-weight: 600;
     }
-    @media (max-width: 400px ){
-        width: 61px;
-  
-     }
+    @media (max-width: 380px) {
+        /* width: 96px;
+        margin-left: 4px; */
+        p {
+            font-size: 12px;
+        }
+        span {
+            font-size: 6px;
+        }
+    }
 }
 .drClinic {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* flex-grow: 1; */
     color: var(--artyclick-orange);
     font-family: 'Kumbh Sans';
     gap: 2px;
@@ -134,11 +154,27 @@
         color: var(--cloud-burst);
     }
 
-    @media (max-width: 400px ){
-        width: 96px;
-        margin-left: 4px;
-  
-     }
+    @media (max-width: 380px) {
+        /* width: 96px;
+        margin-left: 4px; */
+        h1 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 8px;
+        }
+    }
+}
+
+.rightSide {
+    display: flex;
+    gap: 12px;
+    @media (max-width: 380px) {
+        gap: 8px;
+    }
+    @media (max-width: 340px) {
+        gap: 4px;
+    }
 }
 
 .location {
@@ -162,23 +198,32 @@
 
 .billingDetails {
     /* width: 388px; */
-    height: 227px;
-    background-color: #2B275A;
+    /* height: 227px; */
+    background-color: #2b275a;
     font-family: 'Kumbh Sans';
     border-radius: 25px;
     color: white;
     display: flex;
+    padding: 20px;
+    flex-direction: column;
     justify-content: center;
+    /* justify-content: center; */
 
-    @media (max-width: 500px ){
-        width:100%;
-
+    @media (max-width: 380px) {
+        padding: 12px;
     }
     /* @media (max-width: 365px ){
         width:90%;
         margin-left: 10px !important;
 
     } */
+}
+.billHeading {
+    font-size: 14px;
+    font-weight: bolder;
+    @media (max-width: 380px) {
+        font-size: 12px;
+    }
 }
 
 .bill {
@@ -193,21 +238,36 @@
 .billingValue {
     color: white !important;
 }
+.couponsContainer {
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    padding-top: 4px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
 .chip {
     /* background-color: var(--artyclick-orange); */
     /* opacity: 0.1; */
     background-color: #ff841221;
-    borderRadius: 25px;
+    border-radius: 25px;
     display: flex;
     padding: 4px 8px;
     gap: 4px;
-    alignItems: center;
+    align-items: center;
 
-    @media (max-width: 500px ){
-
+    @media (max-width: 500px) {
     }
 }
-
-.line{
-    border: 1px dashed ;
+.payableAmount {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 4px;
+    @media (max-width: 380px) {
+        padding-top: 2px;
+        font-size: 10px;
+    }
 }

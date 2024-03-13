@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../App.css';
+import containerImage from '../../assets/images/Subtract.png';
 import styles from './DetailCard.module.css';
 import TopBar from '../TopBar/TopBar';
 import Header from '../Header/Header';
@@ -11,26 +13,18 @@ import CouponBackground from '../../assets/CouponBackground';
 const DetailCard = () => {
     return (
         <>
-            <div className={styles.container}>
-                <TopBar />
-                <Header />
-                <div className={styles.containerCard}>
-                    <div className={styles.cardlist}
-                        style={{
-                          
-                           
-                        }}
-                    >
-                        <div className={styles.profilInfo}
-                            
-                        >
-                            <div className={styles.roundedCircle1}>
-                                <Teeth />
-                            </div>
-                            <div>
-                                <div className={styles.patientService}
-                                   
-                                >
+            <div className="container">
+                <img src={containerImage} alt="" width={'100%'} />
+                <div className="header">
+                    <TopBar />
+                    <Header />
+                    <div className="containerCard">
+                        <div className="cardList">
+                            <div className={styles.profilInfo}>
+                                <div className={styles.roundedCircle1}>
+                                    <Teeth />
+                                </div>
+                                <div className="patientDetial">
                                     <div className={styles.patientDetailKey}>
                                         <p>Patient</p>
                                         <p>Appointment ID</p>
@@ -45,170 +39,146 @@ const DetailCard = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                            }}
-                        >
-                            <DashedLine />
-                        </div>
-                        <div className={styles.drDetails}>
-                            <div style={{ display: 'flex', gap: '8px' }}>
-                                <ProfileLogo />
-                                <div className={styles.drName}>
-                                    <p>Dr. Diana Cruz</p>
-                                    <span>BDS, MDS</span>
-                                </div>
+                            <div className={styles.dashedLine}>
+                                <DashedLine />
                             </div>
-                            <div className={styles.drClinic}>
-                                <h1>Dental Clinic</h1>
-                                <p>12/2, Mathura Road Sector</p>
-                                <p>37, Faridabad - Delhi</p>
-                            </div>
-                            <div className={styles.location}>
-                                <BackArrow />
-                            </div>
-                        </div>
-                        <div className={styles.billingDetails}>
-                            <div style={{ padding: '20px', display:'flex', flexDirection: 'column', justifyContent:'center' }}>
-                                <h1
-                                    style={{
-                                        fontSize: '14px',
-                                        fontWeight: 'bolder',
-                                    }}
-                                >
-                                    <span style={{ color: '#FFA047' }}>
-                                        BILLING{' '}
-                                    </span>
-                                    DETAILS
-                                </h1>
-                                <div className={styles.bill}>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            flexDirection: 'column',
-                                            gap: '4px',
-                                            paddingTop: '6px',
-                                        }}
-                                    >
-                                        <p>Consultation Fees</p>
-                                        <p>Service Fees</p>
-                                        <p>Technology Fees</p>
-                                        <p>Test</p>
-                                        <p>Surgery</p>
-                                        <p>Medicine</p>
-                                    </div>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            flexDirection: 'column',
-                                            gap: '4px',
-                                            paddingTop: '6px',
-                                        }}
-                                    >
-                                        <p className={styles.billingValue}>
-                                            Rs. 1000
-                                        </p>
-                                        <p className={styles.billingValue}>
-                                            Rs. 100
-                                        </p>
-                                        <p className={styles.billingValue}>
-                                            Rs. 100
-                                        </p>
-                                        <p className={styles.billingValue}>-</p>
-                                        <p className={styles.billingValue}>-</p>
-                                        <p className={styles.billingValue}>-</p>
+                            <div className={styles.drDetails}>
+                                <div style={{ display: 'flex', gap: '8px' }}>
+                                    <ProfileLogo />
+                                    <div className={styles.drName}>
+                                        <p>Dr. Diana Cruz</p>
+                                        <span>BDS, MDS</span>
                                     </div>
                                 </div>
-                                <div
-                                    style={{
-                                        fontWeight: 'bold',
-                                        fontSize: '10px',
-                                        display: 'flex',
-                                        paddingTop: '4px',
-                                        alignItems: 'center',
-                                        justifyContent: 'space-between',
-                                        gap: '4px',
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            gap: '4px',
-                                            alignItems: 'center',
-                                        }}
-                                    >
-                                        <p>Coupons : </p>
+                                <div className={styles.rightSide}>
+                                    <div className={styles.drClinic}>
+                                        <h1>Dental Clinic</h1>
+                                        <p>12/2, Mathura Road Sector</p>
+                                        <p>37, Faridabad - Delhi</p>
+                                    </div>
+                                    <div className={styles.location}>
+                                        <BackArrow />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.billingDetails}>
+                                <div>
+                                    <h1 className={styles.billHeading}>
+                                        <span style={{ color: '#FFA047' }}>
+                                            BILLING{' '}
+                                        </span>
+                                        DETAILS
+                                    </h1>
+                                    <div className={styles.bill}>
+                                        <div
+                                            style={{
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                gap: '4px',
+                                                paddingTop: '6px',
+                                            }}
+                                        >
+                                            <p>Consultation Fees</p>
+                                            <p>Service Fees</p>
+                                            <p>Technology Fees</p>
+                                            <p>Test</p>
+                                            <p>Surgery</p>
+                                            <p>Medicine</p>
+                                        </div>
+                                        <div
+                                            style={{
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                gap: '4px',
+                                                paddingTop: '6px',
+                                            }}
+                                        >
+                                            <p className={styles.billingValue}>
+                                                Rs. 1000
+                                            </p>
+                                            <p className={styles.billingValue}>
+                                                Rs. 100
+                                            </p>
+                                            <p className={styles.billingValue}>
+                                                Rs. 100
+                                            </p>
+                                            <p className={styles.billingValue}>
+                                                -
+                                            </p>
+                                            <p className={styles.billingValue}>
+                                                -
+                                            </p>
+                                            <p className={styles.billingValue}>
+                                                -
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={styles.couponsContainer}>
                                         <div
                                             style={{
                                                 display: 'flex',
                                                 gap: '4px',
+                                                alignItems: 'center',
                                             }}
                                         >
+                                            <p>Coupons : </p>
                                             <div
-                                                className={styles.chip}
                                                 style={{
-                                                    borderRadius: '25px',
                                                     display: 'flex',
-                                                    padding: '4px 8px',
                                                     gap: '4px',
-                                                    alignItems: 'center',
                                                 }}
                                             >
-                                                <p
-                                                    style={{
-                                                        color: '#FF8412',
-                                                    }}
-                                                >
-                                                    Health 100
-                                                </p>
-                                                <p style={{ color: 'white' }}>
-                                                    X
-                                                </p>
-                                            </div>
-                                            <div
-                                                className={styles.chip}
-                                               
-                                            >
-                                                <p
-                                                    style={{
-                                                        color: '#FF8412',
-                                                    }}
-                                                >
-                                                    Consult 100
-                                                </p>
-                                                <p style={{ color: 'white' }}>
-                                                    X
-                                                </p>
+                                                <div className={styles.chip}>
+                                                    <p
+                                                        style={{
+                                                            color: '#FF8412',
+                                                        }}
+                                                    >
+                                                        Health 100
+                                                    </p>
+                                                    <p
+                                                        style={{
+                                                            color: 'white',
+                                                        }}
+                                                    >
+                                                        X
+                                                    </p>
+                                                </div>
+                                                <div className={styles.chip}>
+                                                    <p
+                                                        style={{
+                                                            color: '#FF8412',
+                                                        }}
+                                                    >
+                                                        Consult 100
+                                                    </p>
+                                                    <p
+                                                        style={{
+                                                            color: 'white',
+                                                        }}
+                                                    >
+                                                        X
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p
+                                            style={{
+                                                color: '#FF5151',
+                                                fontSize: '10px',
+                                                fontWeight: '600',
+                                            }}
+                                        >
+                                            -Rs. 200
+                                        </p>
                                     </div>
-                                    <p
-                                        style={{
-                                            color: '#FF5151',
-                                            fontSize: '10px',
-                                            fontWeight: '600',
-                                        }}
-                                    >
-                                        -Rs. 200
-                                    </p>
-                                </div>
-                                {/* <DashedLine color="white" /> */}
-                            <hr className={styles.line}/>
-
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        fontSize: '12px',
-                                        fontWeight: 'bolder',
-                                        paddingTop: '8px',
-                                    }}
-                                >
-                                    <p>Payable Amount</p>
-                                    <p>Rs. 1000</p>
+                                    <div className={styles.dashedLine2}>
+                                        <DashedLine color="white" />
+                                    </div>
+                                    <div className={styles.payableAmount}>
+                                        <p>Payable Amount</p>
+                                        <p>Rs. 1000</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

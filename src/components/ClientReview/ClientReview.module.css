@@ -1,141 +1,145 @@
+.fontKumbSans {
+    font-family: 'Kumbh Sans';
+}
 .client {
-    padding : 20px 10px;
-    margin-top : 80px;
-    display : flex ;
-    flex-direction : column;
-    justify-content:center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
 }
 
-.headingHolder{
-    display : flex ;
-    flex-direction : column;
-    justify-content:center;
+.headingHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap :20px;
+    gap: 20px;
 }
 
-.says{
-    color : #2B275A;
+.says {
+    color: #2b275a;
 }
 
-.heading{
-    color: #FF8412;
+.heading {
+    color: #ff8412;
 }
 
-.info{
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin: 10px 0;
     color: #757575;
     font-size: 10px;
     font-weight: 500;
 }
 
-.detailedInfo{
-    display : flex ;
-    flex-direction : column;
-    justify-content:center;
+.detailedInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 398px;
-    background-color: #F2F7FB;
+    background-color: #f2f7fb;
     border-radius: 35px;
-    padding : 10px 35px;
-    margin :30px 0;
-    gap : 20px;
+    padding: 10px 35px;
+    margin: 30px 0;
+    gap: 20px;
 
-    @media (max-width:398px){
+    @media (max-width: 398px) {
         width: 280px;
-        
     }
+    /* @media (max-width: 350px) {
+        width: 250px;
+    } */
 }
 
-.detailContent{
-    font-size : 14px;
+.detailContent {
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     width: 328px;
-    @media (max-width:328px){
+    @media (max-width: 328px) {
         width: 280px;
-        
     }
-  
-
 }
 
-.profileData{
-    display : flex ;
-    flex-direction : column;
-    justify-content:center;
+.profileData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color:#2B275A;
+    color: #2b275a;
 }
 
-.username{
+.username {
     font-size: 12px;
     font-weight: 600;
-    color:#2B275A;
+    color: #2b275a;
 }
 
-.profileType{
+.profileType {
     font-size: 8px;
     font-weight: 400;
-    color:#757575;
+    color: #757575;
 }
 
 .highLight {
-    color:#FF8412;
+    color: #ff8412;
 }
 
-.testimonials{
+.testimonials {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    gap:10px;
+    gap: 10px;
     width: 398px;
-    overflow:hidden;
+    overflow: hidden;
     no-scrollbar: none;
 
-    @media (max-width:398px){
+    @media (max-width: 398px) {
         width: 345px;
     }
-    @media (max-width:340px){
+    @media (max-width: 340px) {
         width: 325px;
     }
-
 }
 
 .arrors {
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    margin-top:20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 
-    .left{
-        background-color: #FF8412;
+    .left {
+        background-color: #ff8412;
         border-radius: 50px;
         /* opacity : 0.2; */
-        cursor : pointer
+        cursor: pointer;
     }
-    .right{
-        background-color: #FF8412;
+    .right {
+        background-color: #ff8412;
         /* opacity : 0.2; */
         border-radius: 50px;
         transform: rotate(180deg);
-        cursor : pointer
-
+        cursor: pointer;
     }
 
     .nonActive {
-        background-color: #FF8412;
-        opacity : 0.2;
+        background-color: #ff8412;
+        opacity: 0.2;
         border-radius: 50px;
     }
 
-    .nonActiveRight{
-        background-color: #FF8412;
-        opacity : 0.2;
+    .nonActiveRight {
+        background-color: #ff8412;
+        opacity: 0.2;
         border-radius: 50px;
         transform: rotate(180deg);
     }
-
 }
-  
