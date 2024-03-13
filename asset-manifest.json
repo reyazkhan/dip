@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/dip/static/css/main.6e1d3109.css",
-    "main.js": "/dip/static/js/main.d9e1a796.js",
+    "main.css": "/dip/static/css/main.c809ee48.css",
+    "main.js": "/dip/static/js/main.39208767.js",
     "static/js/453.4ef743f5.chunk.js": "/dip/static/js/453.4ef743f5.chunk.js",
+    "static/media/IPhone.png": "/dip/static/media/IPhone.2a2a69b4c47e529f9efb.png",
+    "static/media/PlayStore.png": "/dip/static/media/PlayStore.7c21a075a6d5312ebbde.png",
+    "static/media/AppleStore.png": "/dip/static/media/AppleStore.adc42a1432e960239aed.png",
     "index.html": "/dip/index.html",
-    "main.6e1d3109.css.map": "/dip/static/css/main.6e1d3109.css.map",
-    "main.d9e1a796.js.map": "/dip/static/js/main.d9e1a796.js.map",
+    "main.c809ee48.css.map": "/dip/static/css/main.c809ee48.css.map",
+    "main.39208767.js.map": "/dip/static/js/main.39208767.js.map",
     "453.4ef743f5.chunk.js.map": "/dip/static/js/453.4ef743f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e1d3109.css",
-    "static/js/main.d9e1a796.js"
+    "static/css/main.c809ee48.css",
+    "static/js/main.39208767.js"
   ]
 }
