@@ -33,7 +33,7 @@ const FAQ = () => {
                                 <div className={style.detailsText}>
                                     <span className={style.item_direction}>{res?.details}</span>
                                 </div>
-                                <Arror  className={style.arrorDirection} onClick={()=>  setSelectedFaq('res?.item')}/>
+                                <Arror  className={style.arrorDirection} onClick={()=>  setSelectedFaq(res?.item)}/>
                             </div>
 
                         )}

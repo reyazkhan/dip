@@ -13,8 +13,23 @@
         margin: 0 auto;
         background-color: white;
         border-radius: 25px;
+        justify-content : center;
+        align-items: center;
         /* padding: 8px; */
+        @media (max-width: 500px ){
+            width:100%;
+
+            height: 445px;
+        }
     }
+}
+
+.cardList {
+    padding: 8px;
+    width: 100%;
+    display:flex;
+   flex-direction: center;
+   align-items: center;
 }
 
 .roundedCircle1 {
@@ -25,6 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .patientDetailKey {
@@ -45,9 +61,38 @@
 }
 .drDetails {
     display: flex;
+    justify-content: center;
     gap: 8px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 20px 0;
+
+    @media (max-width: 400px ){
+         gap: 1px;
+
+    }
+}
+
+.patientService{
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    @media (max-width: 400px ){
+        gap: 10px;
+       
+   }
+}
+
+.profilInfo {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    paddingBottom: 10px;
+
+    @media (max-width: 400px ){
+      gap: 0;
+
+   }
 }
 .drName {
     /* background-color: #9593ad; */
@@ -58,6 +103,7 @@
     color: var(--cloud-burst);
     font-family: 'Kumbh Sans';
     gap: 2px;
+   
     p {
         font-size: 14px;
         font-weight: bold;
@@ -66,6 +112,10 @@
         font-size: 8px;
         font-weight: 600;
     }
+    @media (max-width: 400px ){
+        width: 61px;
+  
+     }
 }
 .drClinic {
     display: flex;
@@ -83,6 +133,12 @@
         font-weight: 600;
         color: var(--cloud-burst);
     }
+
+    @media (max-width: 400px ){
+        width: 96px;
+        margin-left: 4px;
+  
+     }
 }
 
 .location {
@@ -95,15 +151,34 @@
     color: white;
     border-radius: 25px;
     rotate: 135deg;
+
+    /* @media (max-width: 400px ){
+        width: 20px;
+    height: 20px;
+    margin : 0 10px 0 0;
+
+    } */
 }
 
 .billingDetails {
-    width: 388px;
+    /* width: 388px; */
     height: 227px;
-    background: var(--cloud-burst);
+    background-color: #2B275A;
     font-family: 'Kumbh Sans';
     border-radius: 25px;
     color: white;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 500px ){
+        width:100%;
+
+    }
+    /* @media (max-width: 365px ){
+        width:90%;
+        margin-left: 10px !important;
+
+    } */
 }
 
 .bill {
@@ -122,4 +197,17 @@
     /* background-color: var(--artyclick-orange); */
     /* opacity: 0.1; */
     background-color: #ff841221;
+    borderRadius: 25px;
+    display: flex;
+    padding: 4px 8px;
+    gap: 4px;
+    alignItems: center;
+
+    @media (max-width: 500px ){
+
+    }
+}
+
+.line{
+    border: 1px dashed ;
 }

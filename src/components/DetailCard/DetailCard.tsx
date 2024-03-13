@@ -15,29 +15,21 @@ const DetailCard = () => {
                 <TopBar />
                 <Header />
                 <div className={styles.containerCard}>
-                    <div
+                    <div className={styles.cardlist}
                         style={{
-                            padding: '8px',
-                            width: '100%',
+                          
+                           
                         }}
                     >
-                        <div
-                            style={{
-                                display: 'flex',
-                                gap: '4px',
-                                paddingBottom: '10px',
-                            }}
+                        <div className={styles.profilInfo}
+                            
                         >
                             <div className={styles.roundedCircle1}>
                                 <Teeth />
                             </div>
                             <div>
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        gap: '80px',
-                                        padding: '10px 20px',
-                                    }}
+                                <div className={styles.patientService}
+                                   
                                 >
                                     <div className={styles.patientDetailKey}>
                                         <p>Patient</p>
@@ -80,7 +72,7 @@ const DetailCard = () => {
                             </div>
                         </div>
                         <div className={styles.billingDetails}>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display:'flex', flexDirection: 'column', justifyContent:'center' }}>
                                 <h1
                                     style={{
                                         fontSize: '14px',
@@ -178,13 +170,7 @@ const DetailCard = () => {
                                             </div>
                                             <div
                                                 className={styles.chip}
-                                                style={{
-                                                    borderRadius: '25px',
-                                                    display: 'flex',
-                                                    padding: '4px 8px',
-                                                    gap: '4px',
-                                                    alignItems: 'center',
-                                                }}
+                                               
                                             >
                                                 <p
                                                     style={{
@@ -209,7 +195,9 @@ const DetailCard = () => {
                                         -Rs. 200
                                     </p>
                                 </div>
-                                <DashedLine color="white" />
+                                {/* <DashedLine color="white" /> */}
+                            <hr className={styles.line}/>
+
                                 <div
                                     style={{
                                         display: 'flex',

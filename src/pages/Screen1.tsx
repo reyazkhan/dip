@@ -16,20 +16,10 @@ const Screen1 = () => {
             <Header /> */}
 
             <DetailCard />
-
             <DiscountCoupon />
             <FAQ />
             <ClientReview />
             <AdSection />
-            {/* <div
-                style={{
-                    backgroundImage: "url('../assets/images/Subtract.png')",
-                    height: '612px',
-                }}
-            > */}
-            {/* <TopBar />
-                <Header /> */}
-
         </div>
     );
 };
