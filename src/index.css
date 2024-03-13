@@ -32,3 +32,110 @@ p {
     margin: 0;
     padding: 0;
 }
+
+.fontFamily {
+    font-family: 'Kumbh Sans';
+}
+
+.screen2Background {
+    background-image: url('./assets/images/Screen2.png');
+    height: 828.89px;
+}
+
+.paymentMode {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .cardChipBackground {
+    background-image: url('./assets/images/cardChip.png');
+    width: 198px;
+    height: 126px;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: auto auto auto auto; */
+    gap: 12px;
+}
+.cardContent {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+}
+
+.roundedCircle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cloud-burst);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.cashMode {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.payTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2b275a;
+    padding: 0 12px;
+}
+
+.activeMode {
+    width: 14px;
+    height: 14px;
+    background-color: var(--artyclick-orange);
+    box-shadow: 0px 0px 100px 0px rgba(255, 132, 18, 0.5);
+    border-radius: 25px;
+}
+.unactiveMode {
+    width: 14px;
+    height: 14px;
+    background-color: #e4e2e1;
+    /* box-shadow: 0px 0px 100px 0px rgba(255, 132, 18, 0.5); */
+    border-radius: 25px;
+}
+
+.arrow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (width <= 400px) {
+    /* .activeMode { */
+    /* background-color: blue; */
+    /* } */
+    .cardContent {
+        padding: 8px;
+        gap: 6px;
+    }
+    .roundedCircle {
+        width: 40px;
+        height: 40px;
+    }
+    .grid {
+        gap: 4px;
+    }
+    .cashMode {
+        font-size: 12px;
+    }
+    .payTitle {
+        font-size: 12px;
+        padding: 0;
+    }
+}

@@ -12,8 +12,8 @@ import CouponBackground from '../assets/CouponBackground';
 const Screen1 = () => {
     return (
         <div>
-            <TopBar />
-            <Header />
+            {/* <TopBar />
+            <Header /> */}
 
             <DetailCard />
 
