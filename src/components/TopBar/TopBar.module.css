@@ -10,9 +10,20 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     p span {
         /* background-color: var(--artyclick-orange); */
         color: #ff8412;
     }
+}
+
+.marqueeContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+    /* margin-left: 10px; Adjust as needed */
+}
+
+.marqueeContainer span {
+    display: inline-block;
+    /* padding-right: 20px; Add some spacing between items */
 }

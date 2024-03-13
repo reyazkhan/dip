@@ -18,7 +18,7 @@ function App() {
             )}
             {navigateScreen === 2 && (
                 <div>
-                    {/* <Screen2 /> */}
+                    <Screen2 />
                     <button onClick={() => setNavigateScreen(1)}>
                         Go to Screen 1
                     </button>
