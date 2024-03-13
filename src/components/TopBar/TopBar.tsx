@@ -10,7 +10,7 @@ const TopBar = () => {
             <Star />
             <p>
                 Limited-time offer! <span>Get 50% off </span>on your first
-                treatment and take co
+                treatment and take
             </p>
         </div>
     );

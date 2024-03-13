@@ -1,0 +1,53 @@
+.fontKumbSans {
+    font-family: 'Kumbh Sans';
+}
+
+.couponBackground {
+    background-image: url('../../assets/images/CouponBackground.png');
+    width: 388px;
+    height: 117px;
+}
+.couponCard {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.offer {
+    background: var(--artyclick-orange);
+    width: max-content;
+    font-weight: bolder;
+    font-size: 8.11px;
+    border-radius: 25px;
+    padding: 4px 8px;
+    color: white;
+}
+.title {
+    color: var(--cloud-burst);
+    width: 251px;
+    height: 36px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.code {
+    display: flex;
+    justify-content: space-between;
+    color: var(--artyclick-orange);
+    font-weight: bold;
+    font-size: 10px;
+    align-items: center;
+}
+
+.loadMore {
+    background-color: var(--cloud-burst);
+    font-size: 10px;
+    font-weight: bolder;
+    height: 30px;
+    width: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
