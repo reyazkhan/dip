@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.backWithSelect}>
-                <div className={styles.back}>
+              <div className={styles.back} >
                     <BackArrow />
                 </div>
                 <div className={styles.location}>

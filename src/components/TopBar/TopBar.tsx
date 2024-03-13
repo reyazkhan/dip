@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './TopBar.module.css';
 import Star from '../../assets/Star';
 // import './TopBar.module.css';
+ 
 
 const TopBar = () => {
     // return <div className="topBar">TopBar</div>;
