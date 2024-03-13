@@ -1,6 +1,6 @@
 import IphoneImg from "../../assets/IPhone.png"
+import PlayStore from "../../assets/PlayStore.png"
 import AppleStore from "../../assets/AppleStore.png"
-import PlayStore from "../../assets/AppleStore.png"
 import style  from "./AdSection.module.css"
 
 const AdSection  = () => {

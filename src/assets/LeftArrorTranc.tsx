@@ -1,4 +1,4 @@
-const LeftArror = ({...props}) => {
+const LeftArrorTranc = ({...props}) => {
     return(
         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
         <ellipse cx="25" cy="25" rx="25" ry="25" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0 50)" fill="white" fill-opacity="0.15"/>
@@ -7,4 +7,4 @@ const LeftArror = ({...props}) => {
     )
 }
 
-export default LeftArror
+export default LeftArrorTranc

@@ -112,15 +112,30 @@
     .left{
         background-color: #FF8412;
         border-radius: 50px;
-        opacity : 0.2;
+        /* opacity : 0.2; */
         cursor : pointer
     }
     .right{
         background-color: #FF8412;
+        /* opacity : 0.2; */
         border-radius: 50px;
         transform: rotate(180deg);
         cursor : pointer
 
     }
+
+    .nonActive {
+        background-color: #FF8412;
+        opacity : 0.2;
+        border-radius: 50px;
+    }
+
+    .nonActiveRight{
+        background-color: #FF8412;
+        opacity : 0.2;
+        border-radius: 50px;
+        transform: rotate(180deg);
+    }
+
 }
   

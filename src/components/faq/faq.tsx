@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import style from './faq.module.css'
 import Arror from '../../assets/Arror'
 import { faqlist } from '../../constant'
-import LeftArror from '../../assets/LeftArror'
-import RightArror from '../../assets/RightArror'
+import LeftArrorTranc from '../../assets/LeftArrorTranc'
+import RightArrorWhite from '../../assets/RightArrorWhite'
+import RightArrorTranc from '../../assets/RightArrorTranc'
+import LeftArrorWhite from '../../assets/LeftArrorWhite'
  
 
 const FAQ = () => {
@@ -31,11 +33,11 @@ const FAQ = () => {
                                 <div className={style.detailsText}>
                                     <span className={style.item_direction}>{res?.details}</span>
                                 </div>
-                                <Arror  className={style.arrorDirection}/>
+                                <Arror  className={style.arrorDirection} onClick={()=>  setSelectedFaq('res?.item')}/>
                             </div>
 
                         )}
-                         {  res?.item !== 'Specialization' &&
+                         { res?.item !== 'Specialization' &&
                             <hr className={style.border}/>
                          }
 
@@ -72,9 +74,19 @@ const FAQ = () => {
                     </>
                 )
                 })}
+
                 <div className={style.arrors}>
-                    <LeftArror  onClick={() => setCount(1)}/>
-                    <RightArror onClick={() => setCount(2)}/>
+                    {count === 1 ? (
+                        <>
+                        <LeftArrorTranc  onClick={() => setCount(1)}/>
+                        <RightArrorWhite onClick={() => setCount(2)}/>
+                        </>
+                    ):count === 2 &&(
+                        <>
+                        <LeftArrorWhite  onClick={() => setCount(1)}/>
+                        <RightArrorTranc  onClick={() => setCount(2)}/>
+                        </>
+                    )}
                 </div>
            
         </article>

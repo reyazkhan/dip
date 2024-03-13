@@ -1,22 +1,25 @@
 import ProfileImg from '../../assets/ProfileImg'
 import ComasImg from '../../assets/ComasImg'
 import style from './ClientReview.module.css'
-import LeftArror from '../../assets/LeftArror'
-import RightArror from '../../assets/RightArror'
-import { useRef } from 'react'
+import LeftArror from '../../assets/LeftArrorTranc'
+import RightArror from '../../assets/RightArrorWhite'
+import { useRef, useState } from 'react'
 
 const ClientReview = () => {
+    const[active , setActive]= useState<number>(2)
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
     const showPrevious = (data: string) => {
+        setActive(1)
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollLeft -= 100;
+            scrollContainerRef.current.scrollLeft -= 270;
         }
     }
 
     const showNext = (data: string) => {
+        setActive(2)
        if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollLeft += 80;
+        scrollContainerRef.current.scrollLeft += 270;
         }
     }
 
@@ -47,8 +50,8 @@ const ClientReview = () => {
                 </div>
             </div>
             <div className={style.arrors}>
-                    <LeftArror className={style.left}  onClick={showPrevious} />
-                    <LeftArror className={style.right} onClick={showNext}/>
+                    <LeftArror className={`${active === 1 ? style.left :  style.left && style.nonActive }`}  onClick={showPrevious} />
+                    <LeftArror   className={`${active === 2 ? style.right : style.nonActiveRight }`} onClick={showNext}/>
                 </div>
            
         </article>
