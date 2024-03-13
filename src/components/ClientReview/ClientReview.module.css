@@ -40,7 +40,12 @@
     border-radius: 35px;
     padding : 10px 35px;
     margin :30px 0;
-    gap :20px;
+    gap : 20px;
+
+    @media (max-width:398px){
+        width: 280px;
+        
+    }
 }
 
 .detailContent{
@@ -48,7 +53,10 @@
     font-weight: 400;
     text-align: center;
     width: 328px;
-
+    @media (max-width:328px){
+        width: 280px;
+        
+    }
   
 
 }
@@ -60,6 +68,7 @@
     align-items: center;
     color:#2B275A;
 }
+
 .username{
     font-size: 12px;
     font-weight: 600;
@@ -78,10 +87,40 @@
 
 .testimonials{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap:10px;
     width: 398px;
-    overflow:scroll
+    overflow:hidden;
+    no-scrollbar: none;
+
+    @media (max-width:398px){
+        width: 345px;
+    }
+    @media (max-width:340px){
+        width: 325px;
+    }
 
 }
+
+.arrors {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:20px;
+
+    .left{
+        background-color: #FF8412;
+        border-radius: 50px;
+        opacity : 0.2;
+        cursor : pointer
+    }
+    .right{
+        background-color: #FF8412;
+        border-radius: 50px;
+        transform: rotate(180deg);
+        cursor : pointer
+
+    }
+}
+  

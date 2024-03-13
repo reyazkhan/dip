@@ -1,0 +1,76 @@
+.section {
+    background-Image: url("../../assets/blueBgImg.png");
+    height:243px;
+    padding :0 20px;
+    margin-top: 50px;
+    display:flex;
+
+    @media (max-width:560px){
+        justify-content: space-between;
+
+    }
+
+    @media (max-width:333px){
+        justify-content: space-between;
+        gap:5px;
+        padding :0 10px;  
+       
+    }    
+
+    .infoDiv {
+        display:flex;
+        margin: 0 auto;
+        gap:20px;
+
+        @media (max-width:400px){
+            gap:5px;
+        }
+    }
+
+    .iphoneImg{
+        margin-top : -33px;
+        width: 148px;
+        height :226px;
+    }
+
+    .info{
+        display:flex;
+        margin-top:42px;
+        flex-direction : column;
+        gap:20px;
+    
+        .heading{
+            /* width:220px;
+            height:40px; */
+            font-size : 26px;
+            font-weight : 900;
+            color : #fff;
+
+            span{
+                color : #FF8412;
+                font-weight : 800;
+            }
+            
+        }
+
+        .infoLine{
+            font-size : 10px;
+            font-weight : 500;
+            color: #757575;
+        }
+
+        .storeLink {
+            display:flex;
+            margin-top : 20px;
+            gap: 10px;
+         
+            @media (max-width:333px){
+                gap: 2px;
+            }
+            img {
+                Width : 69.78px;
+                Height : 24.06px;
+            }
+        }
+    }
+}
