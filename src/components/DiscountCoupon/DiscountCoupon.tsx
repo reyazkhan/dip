@@ -35,7 +35,7 @@ const DiscountCoupon = () => {
         );
     };
     return (
-        <div className={styles.fontKumbSans}>
+        <div>
             <div className={styles.discountContainer}>
                 <p style={{ color: '#2B275A' }}>
                     <span style={{ color: '#FF8412' }}>Discount </span>Coupons
@@ -69,7 +69,9 @@ const DiscountCoupon = () => {
                                         <div className={styles.title}>
                                             {coup.title}
                                         </div>
-                                        <div className={styles.code}>Use code "{`${coup.code}`}"</div>
+                                        <div className={styles.code}>
+                                            Use code "{`${coup.code}`}"
+                                        </div>
                                     </div>
                                     <div className={styles.btnDiv}>
                                         <button
@@ -78,13 +80,13 @@ const DiscountCoupon = () => {
                                         >
                                             <span className={styles.btnText}>
                                                 REMOVE
-                                            </span>    
+                                            </span>
                                         </button>
                                     </div>
                                 </div>
-                                
+
                                 {/* <div className={styles.couponCard}> */}
-                                    {/* <div className={styles.offer}>
+                                {/* <div className={styles.offer}>
                                         {coup.offerLabel}
                                     </div>
                                     <div className={styles.title}>

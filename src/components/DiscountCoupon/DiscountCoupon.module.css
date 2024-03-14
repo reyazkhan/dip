@@ -1,6 +1,3 @@
-.fontKumbSans {
-    font-family: 'Kumbh Sans';
-}
 .discountContainer {
     width: 90%;
     margin: 40px auto 20px auto;
@@ -45,15 +42,13 @@
     border-radius: 25px;
     padding: 4px 8px;
     color: white;
-    margin:12px;
+    margin: 12px;
     @media (max-width: 480px) {
-    margin:7px;
-
+        margin: 7px;
     }
     @media (max-width: 400px) {
-        margin:0px;
-    
-     }
+        margin: 0px;
+    }
 }
 .title {
     color: var(--cloud-burst);
@@ -85,10 +80,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:30px;
-    position :absolute;
-    right:0 ;
-    bottom:0;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     @media (max-width: 380px) {
         padding: 4px 8px;
     }
@@ -123,6 +118,6 @@
 }
 
 .btnDiv {
-    display : flex;
-    justify-content: end
+    display: flex;
+    justify-content: end;
 }

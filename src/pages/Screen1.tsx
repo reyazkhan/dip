@@ -8,6 +8,7 @@ import AdSection from '../components/AdSection/AdSection';
 
 import DiscountCoupon from '../components/DiscountCoupon/DiscountCoupon';
 import CouponBackground from '../assets/CouponBackground';
+import SwiperComponent from '../common/components/SwiperComponent';
 
 const Screen1 = () => {
     return (
@@ -18,7 +19,8 @@ const Screen1 = () => {
             <DetailCard />
             <DiscountCoupon />
             <FAQ />
-            {/* <ClientReview /> */}
+            <ClientReview />
+            <SwiperComponent />
             <AdSection />
         </div>
     );
