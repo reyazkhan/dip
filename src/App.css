@@ -39,13 +39,23 @@
 .patientDetial {
     display: flex;
     margin: 10px 20px;
-    justify-content: start;
-    gap:46px;
+    /* justify-content: start; */
+    gap:168px;
     flex-grow: 1;
-    @media (max-width: 340px) {
+     @media (max-width: 340px) {
         margin: 4px 10px;
+            gap:56px !important;
+
+    } 
+    @media (max-width: 425px) {
+        gap:77px !important;
 
     }
+    @media (max-width: 450px) {
+        gap:116px;
+
+    } 
+   
 }
 /* .roundedCircle{
 	width: 50px;
