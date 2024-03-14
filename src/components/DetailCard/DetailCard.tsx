@@ -13,8 +13,8 @@ import CouponBackground from '../../assets/CouponBackground';
 const DetailCard = () => {
     return (
         <>
-            <div className="container">
-                <img src={containerImage} alt="" width={'100%'} />
+            <div className={styles.container}>
+                {/* <img src={containerImage} alt="" width={'100%'} /> */}
                 <div className="header">
                     <TopBar />
                     <Header />
@@ -185,7 +185,7 @@ const DetailCard = () => {
                     </div>
                 </div>
             </div>
-            <div></div>
+            
         </>
     );
 };

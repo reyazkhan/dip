@@ -29,7 +29,7 @@
 .couponCard {
     padding: 10px 30px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 4px;
     width: 100%;
     @media (max-width: 380px) {
@@ -45,13 +45,23 @@
     border-radius: 25px;
     padding: 4px 8px;
     color: white;
+    margin:12px;
+    @media (max-width: 480px) {
+    margin:7px;
+
+    }
+    @media (max-width: 400px) {
+        margin:0px;
+    
+     }
 }
 .title {
     color: var(--cloud-burst);
-    width: 251px;
+    width: 240px;
     height: 36px;
     font-weight: bold;
     font-size: 15px;
+    margin: 6px 0px 6px;
     @media (max-width: 380px) {
         width: 201px;
         font-size: 12px;
@@ -70,11 +80,15 @@
 .removeBtn {
     background-color: #ff8412;
     border-radius: 25px;
-    padding: 8px 12px;
+    padding: 9.5px 16px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    height:30px;
+    position :absolute;
+    right:0 ;
+    bottom:0;
     @media (max-width: 380px) {
         padding: 4px 8px;
     }
@@ -106,4 +120,9 @@
     color: white;
     border-radius: 25px;
     border: none;
+}
+
+.btnDiv {
+    display : flex;
+    justify-content: end
 }

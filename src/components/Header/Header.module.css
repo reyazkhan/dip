@@ -26,13 +26,14 @@
     background-color: var(--artyclick-orange);
     display: flex;
     flex-direction: column;
-    p {
+}
+.location p {
         font-size: 6px;
         font-weight: 500;
         height: 7px;
         padding: 0 4px;
     }
-    select {
+    .location   select {
         border: none;
         background-color: var(--artyclick-orange);
         font-size: 12px;
@@ -41,7 +42,7 @@
         color: white;
         height: 15px;
     }
-}
+
 
 .achievements {
     display: flex;
@@ -52,6 +53,7 @@
     height: 34px;
     width: 223px;
     align-items: center;
+}
     .icon {
         display: flex;
         align-items: center;
@@ -62,4 +64,4 @@
         font-weight: 800;
         font-size: 7.69px;
     }
-}
+

@@ -8,7 +8,7 @@ import RightArrorTranc from '../../assets/RightArrorTranc';
 import LeftArrorWhite from '../../assets/LeftArrorWhite';
 
 const FAQ = () => {
-    const [selectedFaq, setSelectedFaq] = useState('');
+    const [selectedFaq, setSelectedFaq] = useState('About');
     const [count, setCount] = useState<number>(1);
 
     return (

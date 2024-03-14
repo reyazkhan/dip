@@ -62,7 +62,29 @@ const DiscountCoupon = () => {
                                 }}
                             >
                                 <div className={styles.couponCard}>
-                                    <div className={styles.offer}>
+                                    <div>
+                                        <div className={styles.offer}>
+                                            {coup.offerLabel}
+                                        </div>
+                                        <div className={styles.title}>
+                                            {coup.title}
+                                        </div>
+                                        <div className={styles.code}>Use code "{`${coup.code}`}"</div>
+                                    </div>
+                                    <div className={styles.btnDiv}>
+                                        <button
+                                            onClick={() => removeCoupon(index)}
+                                            className={styles.removeBtn}
+                                        >
+                                            <span className={styles.btnText}>
+                                                REMOVE
+                                            </span>    
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                {/* <div className={styles.couponCard}> */}
+                                    {/* <div className={styles.offer}>
                                         {coup.offerLabel}
                                     </div>
                                     <div className={styles.title}>
@@ -79,7 +101,7 @@ const DiscountCoupon = () => {
                                             </span>
                                         </button>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     );

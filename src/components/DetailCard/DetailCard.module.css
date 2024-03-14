@@ -5,23 +5,24 @@
     /* margin-bottom: 20px; */
     /* padding: 20px 10px 0 10px; */
     /* background-color: var(--artyclick-orange); */
-    .containerCard {
-        margin-top: 20px !important;
-        width: 408px;
-        height: 424px;
-        display: flex;
-        margin: 0 auto;
-        background-color: white;
-        border-radius: 25px;
-        justify-content: center;
-        align-items: center;
-        /* padding: 8px; */
-        @media (max-width: 500px) {
-            width: 100%;
+}
 
-            height: 445px;
-        }
+.containerCard {
+    margin-top: 20px !important;
+    width: 408px;
+    height: 424px;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px; */
+    @media (max-width: 500px) {
+        width: 100%;
+        height: 445px;
     }
+   
 }
 
 .cardList {
@@ -75,9 +76,9 @@
     gap: 10px;
     /* padding-bottom: 10px; */
 
-    /* @media (max-width: 400px) {
-        gap: 0;
-    } */
+    @media (max-width: 480px) {
+        margin-bottom:10px;
+    }
 }
 
 .dashedLine {
@@ -90,7 +91,7 @@
 .dashedLine2 {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     align-items: center;
     margin: 4px auto;
 }
@@ -98,8 +99,8 @@
 .drDetails {
     display: flex;
     /* justify-content: center; */
-    gap: 8px;
-    justify-content: space-between;
+    gap: 13px;
+    /* justify-content: center; */
     padding: 20px 0;
 
     @media (max-width: 340px) {
@@ -211,6 +212,7 @@
 
     @media (max-width: 380px) {
         padding: 12px;
+        margin-top :12px;
     }
     /* @media (max-width: 365px ){
         width:90%;
@@ -221,6 +223,7 @@
 .billHeading {
     font-size: 14px;
     font-weight: bolder;
+    margin: 6px 12px 5px 12px;
     @media (max-width: 380px) {
         font-size: 12px;
     }
@@ -231,6 +234,7 @@
     justify-content: space-between;
     font-size: 10px;
     font-weight: 600;
+    margin: 0 12px;
     p {
         color: #9593ad;
     }
@@ -246,6 +250,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 4px;
+    margin: 0 12px 13px;
 }
 .chip {
     /* background-color: var(--artyclick-orange); */
@@ -266,6 +271,7 @@
     font-size: 12px;
     font-weight: bolder;
     padding-top: 4px;
+    margin: 0 12px 6px;
     @media (max-width: 380px) {
         padding-top: 2px;
         font-size: 10px;

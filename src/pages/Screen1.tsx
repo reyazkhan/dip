@@ -18,7 +18,7 @@ const Screen1 = () => {
             <DetailCard />
             <DiscountCoupon />
             <FAQ />
-            <ClientReview />
+            {/* <ClientReview /> */}
             <AdSection />
         </div>
     );
