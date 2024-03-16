@@ -93,25 +93,25 @@ button {
 }
 
 .payTitle {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #2b275a;
-    padding: 0 12px;
+    padding: 0 1.2rem;
 }
 
 .activeMode {
-    width: 14px;
-    height: 14px;
+    width: 1.4rem;
+    height: 1.4rem;
     background-color: var(--artyclick-orange);
     box-shadow: 0px 0px 100px 0px rgba(255, 132, 18, 0.5);
-    border-radius: 25px;
+    border-radius: 2.5rem;
 }
 .unactiveMode {
-    width: 14px;
-    height: 14px;
+    width: 1.4rem;
+    height: 1.4rem;
     background-color: #e4e2e1;
     /* box-shadow: 0px 0px 100px 0px rgba(255, 132, 18, 0.5); */
-    border-radius: 25px;
+    border-radius: 2.5rem;
 }
 
 .arrow {

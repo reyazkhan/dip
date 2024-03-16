@@ -11,8 +11,37 @@ import Wallet from '../assets/Wallet';
 import LeftArrorTranc from '../assets/LeftArrorTranc';
 import RightArrorWhite from '../assets/RightArrorWhite';
 import Girl from '../assets/Girl.png';
+import MasterCardLeftIcon from '../assets/masterCardLeftIcon';
+import MasterCardRightIcon from '../assets/masterCardRightIcon';
+import creditCardBg from '../assets/images/creditCardBackgroundImage.png';
+import CardChip from '../assets/CardChip';
+import { useState } from 'react';
 
 const Screen2 = () => {
+    const paymentModeCard = [
+        {
+            mode: 'Cash',
+            title: 'Pay with cash.',
+            icon: BankNote,
+        },
+        {
+            mode: 'UPI',
+            title: 'GooglePay, PhonePe.',
+            icon: Upi,
+        },
+        {
+            mode: 'NetBanking',
+            title: 'All Indian Banks.',
+            icon: NetBanking,
+        },
+        {
+            mode: 'Wallet',
+            title: 'Freecharge, Paytm',
+            icon: Wallet,
+        },
+    ];
+    const [paymentModelSelectedIndex, setPaymentSelectedIndex] = useState(0);
+
     return (
         <>
             <div>
@@ -20,7 +49,9 @@ const Screen2 = () => {
                     <TopBar />
                     <Header />
                     <div className={styles.creditCardContainer}>
-                        <div className={styles.creditCardBackgroundImage}>
+                        {/* <div className={styles.creditCardBackgroundImage}> */}
+                        <div className={styles.pRel}>
+                            <img src={creditCardBg} alt="" />
                             {/* <img
                                 src={creditCard}
                                 alt="credit card"
@@ -28,6 +59,51 @@ const Screen2 = () => {
                                 // style={{ zIndex: 1 }}
                                 // className='creditCard'
                             /> */}
+                            <div className={styles.p10}>
+                                <div className={styles.justifyBetween}>
+                                    <div className={styles.cardName}>
+                                        Master Card
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.masterCardIconContainer
+                                        }
+                                    >
+                                        <div className={styles.whiteIcon}></div>
+                                        <div
+                                            className={styles.orangeIcon}
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div className={styles.cardNumberContainer}>
+                                    <p className={styles.mdf12}>Card number</p>
+                                    <div
+                                        className={`${styles.exbf20} ${styles.justifyBetween}`}
+                                    >
+                                        <p>2329</p>
+                                        <p>5551</p>
+                                        <p>2100</p>
+                                        <p>****</p>
+                                    </div>
+                                </div>
+                                <div
+                                    className={`${styles.amountContainer} ${styles.justifyBetween}`}
+                                >
+                                    <div>
+                                        <p className={styles.mdf12}>
+                                            Current Balance
+                                        </p>
+                                        <p className={styles.exbf24}>
+                                            Rs. 42,371.42
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p className={styles.mdf12}>Expire</p>
+
+                                        <p className={styles.exbf20}>10/27</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         {/* <div
                         style={{
@@ -49,12 +125,12 @@ const Screen2 = () => {
                         <div className="paymentMode">
                             <p>
                                 <span style={{ color: '#FFA047' }}>
-                                    PAYMENT{' '}
+                                    PAYMENT &nbsp;
                                 </span>
                                 MODES
                             </p>
                         </div>
-                        <div className="grid">
+                        {/* <div className="grid">
                             <div className="cardChipBackground">
                                 <div style={{ position: 'relative' }}>
                                     <img src={cardChip} alt="" width={'100%'} />
@@ -184,16 +260,90 @@ const Screen2 = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div> */}
+                        <div className={styles.grid}>
+                            {paymentModeCard?.map((paymentMode, index) => {
+                                return (
+                                    <div
+                                        style={{ position: 'relative' }}
+                                        key={index}
+                                        onClick={() =>
+                                            setPaymentSelectedIndex(index)
+                                        }
+                                    >
+                                        <CardChip className={styles.card} />
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                top: 0,
+                                                width: '100%',
+                                            }}
+                                        >
+                                            <div className={styles.cardContent}>
+                                                <div
+                                                    style={{
+                                                        display: 'flex',
+                                                        gap: '1rem',
+                                                        alignItems: 'center',
+                                                    }}
+                                                >
+                                                    <div
+                                                        className={
+                                                            styles.roundedCircle
+                                                        }
+                                                    >
+                                                        {index === 0 ? (
+                                                            <BankNote />
+                                                        ) : index === 1 ? (
+                                                            <Upi />
+                                                        ) : index === 2 ? (
+                                                            <NetBanking />
+                                                        ) : (
+                                                            <Wallet />
+                                                        )}
+                                                    </div>
+                                                    <p
+                                                        className={
+                                                            styles.cashMode
+                                                        }
+                                                    >
+                                                        {paymentMode.mode}
+                                                    </p>
+                                                </div>
+                                                <p className={styles.payTitle}>
+                                                    {paymentMode.title}
+                                                </p>
+
+                                                <div
+                                                    style={{
+                                                        display: 'flex',
+                                                        justifyContent: 'end',
+                                                    }}
+                                                >
+                                                    <div
+                                                        className={
+                                                            index ===
+                                                            paymentModelSelectedIndex
+                                                                ? styles.activeMode
+                                                                : styles.unactiveMode
+                                                        }
+                                                    ></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
 
-                    <div className="arrow">
+                    {/* <div className="arrow">
                         <LeftArrorTranc />
                         <RightArrorWhite />
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div className="holder">
+            {/* <div className="holder">
                 <div className="content">
                     <span className="heading">
                         Secure and hassle-free{' '}
@@ -207,7 +357,7 @@ const Screen2 = () => {
                     </span>
                 </div>
                 <img src={Girl} className="girlImg" />
-            </div>
+            </div> */}
         </>
     );
 };
