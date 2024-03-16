@@ -11,6 +11,7 @@ import Wallet from '../assets/Wallet';
 import LeftArrorTranc from '../assets/LeftArrorTranc';
 import RightArrorWhite from '../assets/RightArrorWhite';
 import Girl from '../assets/Girl.png';
+import CreditCard from '../components/CreditCard/creditCard';
 import MasterCardLeftIcon from '../assets/masterCardLeftIcon';
 import MasterCardRightIcon from '../assets/masterCardRightIcon';
 import creditCardBg from '../assets/images/creditCardBackgroundImage.png';
@@ -44,67 +45,31 @@ const Screen2 = () => {
 
     return (
         <>
-            <div>
+            <div className="fontFamily">
                 <div className="screen2Background">
                     <TopBar />
                     <Header />
-                    <div className={styles.creditCardContainer}>
-                        {/* <div className={styles.creditCardBackgroundImage}> */}
-                        <div className={styles.pRel}>
-                            <img src={creditCardBg} alt="" />
-                            {/* <img
-                                src={creditCard}
-                                alt="credit card"
-                                // width={'100%'}
-                                // style={{ zIndex: 1 }}
-                                // className='creditCard'
-                            /> */}
-                            <div className={styles.p10}>
-                                <div className={styles.justifyBetween}>
-                                    <div className={styles.cardName}>
-                                        Master Card
-                                    </div>
-                                    <div
-                                        className={
-                                            styles.masterCardIconContainer
-                                        }
-                                    >
-                                        <div className={styles.whiteIcon}></div>
-                                        <div
-                                            className={styles.orangeIcon}
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div className={styles.cardNumberContainer}>
-                                    <p className={styles.mdf12}>Card number</p>
-                                    <div
-                                        className={`${styles.exbf20} ${styles.justifyBetween}`}
-                                    >
-                                        <p>2329</p>
-                                        <p>5551</p>
-                                        <p>2100</p>
-                                        <p>****</p>
-                                    </div>
-                                </div>
-                                <div
-                                    className={`${styles.amountContainer} ${styles.justifyBetween}`}
-                                >
-                                    <div>
-                                        <p className={styles.mdf12}>
-                                            Current Balance
-                                        </p>
-                                        <p className={styles.exbf24}>
-                                            Rs. 42,371.42
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p className={styles.mdf12}>Expire</p>
-
-                                        <p className={styles.exbf20}>10/27</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            // width: '90%',
+                            // margin: '0 auto',
+                            padding: '8px',
+                            position: 'relative',
+                            flexDirection: 'column',
+                        }}
+                    >
+                        {/* <div>
+                        <img
+                            src={creditCard}
+                            alt="credit card"
+                            width={'100%'}
+                            style={{ zIndex: 1 }}
+                            className='creditCard'
+                        />
+                    </div> */}
+                        <CreditCard />
                         {/* <div
                         style={{
                             position: 'relative',

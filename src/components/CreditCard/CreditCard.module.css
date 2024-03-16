@@ -1,91 +1,90 @@
 .card {
-    background-Image: url("../../assets/creditCard.png");
+    background-image: url('../../assets/creditCard.png');
+    box-shadow: 0px 25px 0px -12px #ffffff4f;
     background-size: cover;
     background-position: top;
-    margin : 0 10px;
-    border-radius: 35px 35px ;
-    padding:20px;
+    margin: 0 10px;
+    border-radius: 35px;
+    padding: 20px;
 }
 
 .logHolder {
     display: flex;
-    justify-content : space-between;
+    justify-content: space-between;
 }
 
 .cardlog {
-    width:82px;
+    width: 82px;
     /* height: 35px; */
-    font-size : 12px;
-    weight : 700;
+    font-size: 12px;
+    weight: 700;
     /* display:flex; */
-    text-align:center;
-    padding :auto 0;
-    padding :10px 20px;
-    background-color : #2B275A;
+    text-align: center;
+    padding: auto 0;
+    padding: 10px 20px;
+    background-color: #2b275a;
     color: #fff;
     border-radius: 30px;
     line-height: 17px;
 }
 
 .contentData {
-    margin : 30px 0;
-    display: flex ;
-    flex-direction : column;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardNo {
-    font-size : 12px;
-    weight : 500;
+    font-size: 12px;
+    weight: 500;
     color: #757575;
 }
 
 .cardCount {
-    font-size : 20px;
-    weight : 800;
-    color : #2B275A;
-    display: flex ;
-    min-gap :10px;
-    justify-content : space-between;
-    margin-right : 60px;
+    font-size: 20px;
+    weight: 800;
+    color: #2b275a;
+    display: flex;
+    min-gap: 10px;
+    justify-content: space-between;
+    margin-right: 60px;
 }
 
 .balance {
-    display: flex ;
+    display: flex;
     /* flex-direction : column; */
-    justify-content : space-between;
+    justify-content: space-between;
 }
 
 .circleDiv {
     display: flex;
 }
 .circle1 {
-    width:40px;
-    height:40px;
-    background-color:#FFFFFF;
-    border-radius : 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50px;
     position: absolute;
     margin-left: -1.6rem;
     opacity: 0.4;
 }
 
 .circle2 {
-    width:40px;
-    height:40px;
-    background-color:#FF8514;
-    border-radius : 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff8514;
+    border-radius: 50px;
 }
 
 .grid {
-    margin:10px;
+    margin: 10px;
     display: grid;
-  grid-template-columns: auto auto;
-  gap :10px;
-
+    grid-template-columns: auto auto;
+    gap: 10px;
 }
-.div12{
-    height:126px;
-    padding:10px;
-    display:flex;
+.div12 {
+    height: 126px;
+    padding: 10px;
+    display: flex;
     background-repeat: no-repeat;
-    
 }
