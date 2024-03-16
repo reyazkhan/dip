@@ -70,6 +70,7 @@
     font-weight: bold;
     font-size: 10px;
     align-items: center;
+    width:141px;
 }
 
 .removeBtn {
@@ -80,16 +81,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    height:30px;
+    position :absolute;
+    right:0 ;
+    bottom:0;
+    width:75px;
+    
     @media (max-width: 380px) {
         padding: 4px 8px;
+        bottom: 0px !important;
+        top:51px;
     }
-    /* @media (max-width: 340px) {
-        padding: 2px;
-    } */
+    @media (max-width: 420px) {
+        bottom: 8px !important;
+    }
 }
 .btnText {
     font-weight: bolder;

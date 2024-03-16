@@ -1,4 +1,4 @@
-import IphoneImg from "../../assets/IPhone.png"
+import IphoneImg from "../../assets/IPhone.svg"
 import PlayStore from "../../assets/PlayStore.png"
 import AppleStore from "../../assets/AppleStore.png"
 import style  from "./AdSection.module.css"

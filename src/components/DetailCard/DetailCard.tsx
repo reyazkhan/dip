@@ -18,7 +18,7 @@ const DetailCard = () => {
                 <div className="header">
                     <TopBar />
                     <Header />
-                    <div className="containerCard">
+                    <div className={styles.containerCard}>
                         <div className="cardList">
                             <div className={styles.profilInfo}>
                                 <div className={styles.roundedCircle1}>
