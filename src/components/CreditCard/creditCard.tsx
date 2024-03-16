@@ -15,23 +15,35 @@ const CreditCard = () => {
                 </div>
 
                 <div className={style.contentData}>
-                    <span className={style.cardNo}>Card number</span>
-                    <span className={style.cardCount}>
-                        2329
-                        <span>5551</span>
-                        <span>2100</span>
-                        <span>****</span>
-                    </span>
+                    <p className={style.cardNo}>Card number</p>
+                    <div
+                        style={{
+                            width: '80%',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <p className={style.cardCount}>2329</p>
+                        <p className={style.cardCount}>5551</p>
+                        <p className={style.cardCount}>2100</p>
+                        <p className={style.cardCount}>****</p>
+                    </div>
                 </div>
 
                 <div className={style.balance}>
-                    <div>
-                        <span className={style.cardNo}>Current Balance</span>
-                        <span className={style.cardCount}>Rs. 42,371.42</span>
+                    <div
+                        className={style.justifyBetween}
+                        style={{ width: '90%' }}
+                    >
+                        <p className={style.cardNo}>Current Balance</p>
+                        <p className={style.cardNo}>Expire</p>
                     </div>
-                    <div>
-                        <span className={style.cardNo}>Expire</span>
-                        <span className={style.cardCount}>10/27</span>
+                    <div
+                        className={style.justifyBetween}
+                        style={{ width: '90%' }}
+                    >
+                        <p className={style.cardCount}>Rs. 42,371.42</p>
+                        <p className={style.cardCount}>10/27</p>
                     </div>
                 </div>
             </div>
