@@ -14,18 +14,23 @@ const DiscountCoupon = () => {
             title: 'Get Rs. 100 discount on service fees.',
             code: 'HEALTH100',
         },
-        {
-            offerLabel: 'OFFER',
-            title: 'Get Rs. 50 discount on your first order.',
-            code: 'FIRST50',
-        },
+        // {
+        //     offerLabel: 'OFFER',
+        //     title: 'Get Rs. 50 discount on your first order.',
+        //     code: 'FIRST50',
+        // },
     ];
     const [couponData, setCouponData] = useState(couponDataArray);
     const loadMore = () => {
-        if (couponData.length < couponDataArray.length) {
+        if (couponData.length < 3) {
             setCouponData((prevCoupons) => [
                 ...prevCoupons,
-                couponDataArray[prevCoupons.length],
+                // couponDataArray[prevCoupons.length],
+                {
+                    offerLabel: 'OFFER',
+                    title: 'Get Rs. 50 discount on your first order.',
+                    code: 'FIRST50',
+                },
             ]);
         }
     };
@@ -38,7 +43,8 @@ const DiscountCoupon = () => {
         <div>
             <div className={styles.discountContainer}>
                 <p style={{ color: '#2B275A' }}>
-                    <span style={{ color: '#FF8412' }}>Discount </span>Coupons
+                    <span style={{ color: '#FF8412' }}>Discount &nbsp;</span>
+                    Coupons
                 </p>
             </div>
             <div className={styles.couponsContainer}>
@@ -84,26 +90,6 @@ const DiscountCoupon = () => {
                                         </button>
                                     </div>
                                 </div>
-
-                                {/* <div className={styles.couponCard}> */}
-                                {/* <div className={styles.offer}>
-                                        {coup.offerLabel}
-                                    </div>
-                                    <div className={styles.title}>
-                                        {coup.title}
-                                    </div>
-                                    <div className={styles.code}>
-                                        <div>Use code "{`${coup.code}`}"</div>
-                                        <button
-                                            onClick={() => removeCoupon(index)}
-                                            className={styles.removeBtn}
-                                        >
-                                            <span className={styles.btnText}>
-                                                REMOVE
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     );

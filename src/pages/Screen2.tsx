@@ -10,8 +10,8 @@ import NetBanking from '../assets/NetBanking';
 import Wallet from '../assets/Wallet';
 import LeftArrorTranc from '../assets/LeftArrorTranc';
 import RightArrorWhite from '../assets/RightArrorWhite';
-import Girl from '../assets/Girl.png';
-import CreditCard from '../components/CreditCard/creditCard';
+import Girl from '../assets/svg/Girl.svg';
+import CreditCard from '../components/CreditCard/CreditCard';
 import MasterCardLeftIcon from '../assets/masterCardLeftIcon';
 import MasterCardRightIcon from '../assets/masterCardRightIcon';
 import creditCardBg from '../assets/images/creditCardBackgroundImage.png';
@@ -60,33 +60,7 @@ const Screen2 = () => {
                             flexDirection: 'column',
                         }}
                     >
-                        {/* <div>
-                        <img
-                            src={creditCard}
-                            alt="credit card"
-                            width={'100%'}
-                            style={{ zIndex: 1 }}
-                            className='creditCard'
-                        />
-                    </div> */}
                         <CreditCard />
-                        {/* <div
-                        style={{
-                            position: 'relative',
-                            // top: '25px',
-                            // top: '-50vh',
-                            top: '-240px',
-                            // display: 'flex',
-                            // justifyContent: 'center',
-                            padding: '15px',
-                        }}
-                    >
-                        <img
-                            src={shadowCreditCard}
-                            alt="credit card"
-                            width={'100%'}
-                        />
-                    </div> */}
                         <div className="paymentMode">
                             <p>
                                 <span style={{ color: '#FFA047' }}>
@@ -95,137 +69,7 @@ const Screen2 = () => {
                                 MODES
                             </p>
                         </div>
-                        {/* <div className="grid">
-                            <div className="cardChipBackground">
-                                <div style={{ position: 'relative' }}>
-                                    <img src={cardChip} alt="" width={'100%'} />
-                                    <div className="cardContent">
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                gap: '10px',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <div className="roundedCircle">
-                                                <BankNote />
-                                            </div>
-                                            <p className="cashMode">Cash</p>
-                                        </div>
-                                        <p className="payTitle">
-                                            Pay with cash
-                                        </p>
 
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                justifyContent: 'end',
-                                            }}
-                                        >
-                                            <div className="activeMode"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="cardChipBackground">
-                                <div style={{ position: 'relative' }}>
-                                    <img src={cardChip} alt="" width={'100%'} />
-                                    <div className="cardContent">
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                gap: '10px',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <div className="roundedCircle">
-                                                <Upi />
-                                            </div>
-                                            <p className="cashMode">UPI</p>
-                                        </div>
-                                        <p className="payTitle">
-                                            GooglePay, PhonePe.
-                                        </p>
-
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                justifyContent: 'end',
-                                            }}
-                                        >
-                                            <div className="unactiveMode"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="cardChipBackground">
-                                <div style={{ position: 'relative' }}>
-                                    <img src={cardChip} alt="" width={'100%'} />
-                                    <div className="cardContent">
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                gap: '10px',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <div className="roundedCircle">
-                                                <NetBanking />
-                                            </div>
-                                            <p className="cashMode">
-                                                Net Banking
-                                            </p>
-                                        </div>
-                                        <p className="payTitle">
-                                            All Indian Banks.
-                                        </p>
-
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                justifyContent: 'end',
-                                            }}
-                                        >
-                                            <div className="unactiveMode"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="cardChipBackground">
-                                <div style={{ position: 'relative' }}>
-                                    <img src={cardChip} alt="" width={'100%'} />
-                                    <div className="cardContent">
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                gap: '10px',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <div className="roundedCircle">
-                                                <Wallet />
-                                            </div>
-                                            <p className="cashMode">Wallet</p>
-                                        </div>
-                                        <p className="payTitle">
-                                            Freecharge, Paytm
-                                        </p>
-
-                                        <div
-                                            style={{
-                                                display: 'flex',
-                                                justifyContent: 'end',
-                                            }}
-                                        >
-                                            <div className="unactiveMode"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className={styles.grid}>
                             {paymentModeCard?.map((paymentMode, index) => {
                                 return (
@@ -302,16 +146,16 @@ const Screen2 = () => {
                         </div>
                     </div>
 
-                    {/* <div className="arrow">
+                    <div className="arrow">
                         <LeftArrorTranc />
                         <RightArrorWhite />
-                    </div> */}
+                    </div>
                 </div>
             </div>
-            {/* <div className="holder">
+            <div className="holder">
                 <div className="content">
                     <span className="heading">
-                        Secure and hassle-free{' '}
+                        Secure and Hassle-free{' '}
                         <span className="highlight">ways to pay</span>
                     </span>
                     <span className="discription">
@@ -322,7 +166,7 @@ const Screen2 = () => {
                     </span>
                 </div>
                 <img src={Girl} className="girlImg" />
-            </div> */}
+            </div>
         </>
     );
 };

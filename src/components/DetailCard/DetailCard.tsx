@@ -24,7 +24,7 @@ const DetailCard = () => {
                                 <div className={styles.roundedCircle1}>
                                     <Teeth />
                                 </div>
-                                <div className="patientDetial">
+                                <div className={styles.patientDetail}>
                                     <div className={styles.patientDetailKey}>
                                         <p>Patient</p>
                                         <p>Appointment ID</p>
@@ -185,7 +185,6 @@ const DetailCard = () => {
                     </div>
                 </div>
             </div>
-            
         </>
     );
 };

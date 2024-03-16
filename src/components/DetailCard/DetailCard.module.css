@@ -1,6 +1,6 @@
 .container {
     background-image: url('../../assets/images/Subtract.png');
-    height: 602px;
+    height: 603px;
     /* padding: 0 8px; */
     /* margin-bottom: 20px; */
     /* padding: 20px 10px 0 10px; */
@@ -8,7 +8,6 @@
 }
 
 .containerCard {
-
     display: flex;
     margin: 10px;
     padding: 10px;
@@ -44,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:4px;
+    margin-left: 4px;
 }
 
 .patientDetailKey {
@@ -81,7 +80,7 @@
     /* padding-bottom: 10px; */
 
     @media (max-width: 480px) {
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -107,16 +106,16 @@
     /* justify-content: center; */
     padding: 20px 0;
 
-     @media (max-width: 340px) {
-       justify-content: center;
-       gap: 13px;
-    padding: 10px 0;
+    @media (max-width: 340px) {
+        justify-content: center;
+        gap: 13px;
+        padding: 10px 0;
 
         /* padding: 6px 0; */
     }
     @media (max-width: 406px) {
         /* gap: 13px; */
-    } 
+    }
     @media (max-width: 430px) {
         /* gap:28px; */
     }
@@ -204,7 +203,6 @@
     color: white;
     border-radius: 25px;
     rotate: 135deg;
-   
 }
 
 .billingDetails {
@@ -219,15 +217,13 @@
 
     @media (max-width: 330px) {
         margin-left: 4px;
-        margin-right:4px;
+        margin-right: 4px;
     }
 
     @media (max-width: 380px) {
         padding: 12px;
-        margin-top :12px;
-
+        margin-top: 12px;
     }
-   
 }
 .billHeading {
     font-size: 14px;
@@ -287,23 +283,20 @@
     }
 }
 
-.patientDetial {
+.patientDetail {
     display: flex;
     margin: 10px 20px;
-    gap:168px;
+    gap: 168px;
     flex-grow: 1;
 
-     @media (max-width: 354px) {
+    @media (max-width: 354px) {
         margin: 5px 10px !important;
-        gap:46px !important;
-
-    } 
+        gap: 46px !important;
+    }
     @media (max-width: 425px) {
-        gap:70px !important;
-
+        gap: 50px !important;
     }
     @media (max-width: 450px) {
-        gap:116px;
-
-    } 
+        gap: 70px;
+    }
 }
