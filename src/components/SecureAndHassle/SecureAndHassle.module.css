@@ -1,0 +1,33 @@
+.holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.heading {
+    color: #ff8412;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #2b275a;
+}
+
+.content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.discription {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.girlImg {
+    margin-top: -50px;
+}
+

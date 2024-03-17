@@ -80,6 +80,7 @@
     margin-left: 20px; 
     display: flex;
     justify-content:end;
+    height:89px;
   }
 .arrorDirection {
     transform: rotate(180deg);

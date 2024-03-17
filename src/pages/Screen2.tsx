@@ -2,21 +2,16 @@
 import styles from '../styles/Screen2.module.css';
 import TopBar from '../components/TopBar/TopBar';
 import Header from '../components/Header/Header';
-import creditCard from '../assets/images/creditCard.png';
-import cardChip from '../assets/images/cardChip.png';
 import BankNote from '../assets/BankNote';
 import Upi from '../assets/Upi';
 import NetBanking from '../assets/NetBanking';
 import Wallet from '../assets/Wallet';
 import LeftArrorTranc from '../assets/LeftArrorTranc';
 import RightArrorWhite from '../assets/RightArrorWhite';
-import Girl from '../assets/svg/Girl.svg';
-import CreditCard from '../components/CreditCard/CreditCard';
-import MasterCardLeftIcon from '../assets/masterCardLeftIcon';
-import MasterCardRightIcon from '../assets/masterCardRightIcon';
-import creditCardBg from '../assets/images/creditCardBackgroundImage.png';
 import CardChip from '../assets/CardChip';
 import { useState } from 'react';
+import CreditCard from '../components/CreditCard/creditCard';
+import SecureAndHassle from '../components/SecureAndHassle/SecureAndHassle';
 
 const Screen2 = () => {
     const paymentModeCard = [
@@ -152,21 +147,7 @@ const Screen2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="holder">
-                <div className="content">
-                    <span className="heading">
-                        Secure and Hassle-free{' '}
-                        <span className="highlight">ways to pay</span>
-                    </span>
-                    <span className="discription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Etiam eu turpis molestie, dictum est a, mattis tellus.
-                        Sed dignissim, metus nec fringilla accumsan, risus sem
-                        sollicitudin lacus.
-                    </span>
-                </div>
-                <img src={Girl} className="girlImg" />
-            </div>
+            <SecureAndHassle/>
         </>
     );
 };

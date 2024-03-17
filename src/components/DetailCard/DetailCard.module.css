@@ -286,7 +286,8 @@
 .patientDetail {
     display: flex;
     margin: 10px 20px;
-    gap: 168px;
+    /* gap: 168px; */
+    justify-content: space-around;
     flex-grow: 1;
 
     @media (max-width: 354px) {
