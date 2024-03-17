@@ -132,15 +132,6 @@
     color: var(--cloud-burst);
     font-family: 'Kumbh Sans';
     gap: 2px;
-
-    p {
-        font-size: 14px;
-        font-weight: bold;
-    }
-    span {
-        font-size: 8px;
-        font-weight: 600;
-    }
     @media (max-width: 380px) {
         /* width: 96px;
         margin-left: 4px; */
@@ -151,6 +142,15 @@
             font-size: 6px;
         }
     }
+}
+
+.drP {
+    font-size: 14px;
+    font-weight: bold;
+}
+.drpan {
+    font-size: 8px;
+    font-weight: 600;
 }
 .drClinic {
     display: flex;

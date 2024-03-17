@@ -46,8 +46,8 @@ const DetailCard = () => {
                                 <div style={{ display: 'flex', gap: '8px' }}>
                                     <ProfileLogo />
                                     <div className={styles.drName}>
-                                        <p>Dr. Diana Cruz</p>
-                                        <span>BDS, MDS</span>
+                                        <p className={styles.drP}>Dr. Diana Cruz</p>
+                                        <span className={styles.drSpan}>BDS, MDS</span>
                                     </div>
                                 </div>
                                 <div className={styles.rightSide}>
