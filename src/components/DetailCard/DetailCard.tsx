@@ -46,15 +46,25 @@ const DetailCard = () => {
                                 <div style={{ display: 'flex', gap: '8px' }}>
                                     <ProfileLogo />
                                     <div className={styles.drName}>
-                                        <p className={styles.drP}>Dr. Diana Cruz</p>
-                                        <span className={styles.drSpan}>BDS, MDS</span>
+                                        <p className={styles.drP}>
+                                            Dr. Diana Cruz
+                                        </p>
+                                        <span className={styles.drSpan}>
+                                            BDS, MDS
+                                        </span>
                                     </div>
                                 </div>
                                 <div className={styles.rightSide}>
                                     <div className={styles.drClinic}>
-                                        <h1>Dental Clinic</h1>
-                                        <p>12/2, Mathura Road Sector</p>
-                                        <p>37, Faridabad - Delhi</p>
+                                        <span className={styles.dentalH}>
+                                            Dental Clinic
+                                        </span>
+                                        <p className={styles.dentalP}>
+                                            12/2, Mathura Road Sector
+                                        </p>
+                                        <p className={styles.dentalP}>
+                                            37, Faridabad - Delhi
+                                        </p>
                                     </div>
                                     <div className={styles.location}>
                                         <BackArrow />

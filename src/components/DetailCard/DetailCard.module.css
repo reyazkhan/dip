@@ -160,25 +160,26 @@
     color: var(--artyclick-orange);
     font-family: 'Kumbh Sans';
     gap: 2px;
-    h1 {
-        font-size: 14px;
-        font-weight: bold;
-    }
-    p {
-        font-size: 10px;
-        font-weight: 600;
-        color: var(--cloud-burst);
-    }
-
+}
+.dentalH {
+    font-size: 14px;
+    font-weight: bold;
     @media (max-width: 380px) {
         /* width: 96px;
         margin-left: 4px; */
-        h1 {
-            font-size: 12px;
-        }
-        p {
-            font-size: 8px;
-        }
+
+        font-size: 12px;
+    }
+}
+.dentalP {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--cloud-burst);
+    @media (max-width: 380px) {
+        /* width: 96px;
+        margin-left: 4px; */
+
+        font-size: 8px;
     }
 }
 
@@ -215,7 +216,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @media (max-width: 330px) {
+    @media (max-width: 340px) {
         margin-left: 4px;
         margin-right: 4px;
     }
