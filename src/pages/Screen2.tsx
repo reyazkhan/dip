@@ -10,7 +10,7 @@ import LeftArrorTranc from '../assets/LeftArrorTranc';
 import RightArrorWhite from '../assets/RightArrorWhite';
 import CardChip from '../assets/CardChip';
 import { useState } from 'react';
-import CreditCard from '../components/CreditCard/creditCard';
+import CreditCard from '../components/CreditCard/CreditCard';
 import SecureAndHassle from '../components/SecureAndHassle/SecureAndHassle';
 
 const Screen2 = () => {
@@ -147,7 +147,7 @@ const Screen2 = () => {
                     </div>
                 </div>
             </div>
-            <SecureAndHassle/>
+            <SecureAndHassle />
         </>
     );
 };

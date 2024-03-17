@@ -1,3 +1,31 @@
+.radialGradient {
+    background:
+        radial-gradient(
+                51.61px at 50% calc(100% - 72px),
+                var(--artyclick-orange) 99%,
+                var(--artyclick-orange) 101%
+            )
+            calc(50% - 60px) 0/120px 100%,
+        radial-gradient(
+                51.61px at 50% calc(100% + 42px),
+                var(--artyclick-orange) 99%,
+                var(--artyclick-orange) 101%
+            )
+            50% calc(100% - 30px) / 120px 100% repeat-x;
+    /* width: 100%; */
+    /* height: max-content; */
+    /* height: 100px; */
+    /* height: 600px; */
+    /* --s: 50px; */
+    /* background: radial-gradient(
+        calc(var(--s)) at top,
+        var(--artyclick-orange) 99%,
+        #0000 99%,
+    ); */
+    /*radial-gradient(calc(var(--s)/2) at bottom,#c39f76 99%,#0000) calc(var(--s)/2) 0;*/
+    /* background-size: var(--s);
+    background-repeat: repeat-x; */
+}
 .creditCardContainer {
     /* display: flex; */
     /* justify-content: center; */
