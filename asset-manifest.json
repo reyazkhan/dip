@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/dip/static/css/main.be534d46.css",
-    "main.js": "/dip/static/js/main.84c329a4.js",
+    "main.css": "/dip/static/css/main.a6c2dc90.css",
+    "main.js": "/dip/static/js/main.00421a46.js",
     "static/js/453.4ef743f5.chunk.js": "/dip/static/js/453.4ef743f5.chunk.js",
     "static/media/IPhone.svg": "/dip/static/media/IPhone.886fb4e2c91ebb9444338ac8d89fd0f0.svg",
-    "static/media/Girl.svg": "/dip/static/media/Girl.efcef5e6cbfc1ae967d9ccaa2d7fbc55.svg",
     "static/media/creditCard.png": "/dip/static/media/creditCard.da4620560d445b70bdf7.png",
     "static/media/creditCardBackgroundImage.png": "/dip/static/media/creditCardBackgroundImage.86b10bffa426467771cb.png",
+    "static/media/Girl.png": "/dip/static/media/Girl.25ae3404c57e67c99923.png",
     "static/media/PlayStore.png": "/dip/static/media/PlayStore.7c21a075a6d5312ebbde.png",
     "static/media/AppleStore.png": "/dip/static/media/AppleStore.adc42a1432e960239aed.png",
     "index.html": "/dip/index.html",
-    "main.be534d46.css.map": "/dip/static/css/main.be534d46.css.map",
-    "main.84c329a4.js.map": "/dip/static/js/main.84c329a4.js.map",
+    "main.a6c2dc90.css.map": "/dip/static/css/main.a6c2dc90.css.map",
+    "main.00421a46.js.map": "/dip/static/js/main.00421a46.js.map",
     "453.4ef743f5.chunk.js.map": "/dip/static/js/453.4ef743f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be534d46.css",
-    "static/js/main.84c329a4.js"
+    "static/css/main.a6c2dc90.css",
+    "static/js/main.00421a46.js"
   ]
 }
