@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dip/static/css/main.a6c2dc90.css",
-    "main.js": "/dip/static/js/main.00421a46.js",
+    "main.css": "/dip/static/css/main.a392462d.css",
+    "main.js": "/dip/static/js/main.1ff83883.js",
     "static/js/453.4ef743f5.chunk.js": "/dip/static/js/453.4ef743f5.chunk.js",
     "static/media/IPhone.svg": "/dip/static/media/IPhone.886fb4e2c91ebb9444338ac8d89fd0f0.svg",
     "static/media/creditCard.png": "/dip/static/media/creditCard.da4620560d445b70bdf7.png",
@@ -10,12 +10,12 @@
     "static/media/PlayStore.png": "/dip/static/media/PlayStore.7c21a075a6d5312ebbde.png",
     "static/media/AppleStore.png": "/dip/static/media/AppleStore.adc42a1432e960239aed.png",
     "index.html": "/dip/index.html",
-    "main.a6c2dc90.css.map": "/dip/static/css/main.a6c2dc90.css.map",
-    "main.00421a46.js.map": "/dip/static/js/main.00421a46.js.map",
+    "main.a392462d.css.map": "/dip/static/css/main.a392462d.css.map",
+    "main.1ff83883.js.map": "/dip/static/js/main.1ff83883.js.map",
     "453.4ef743f5.chunk.js.map": "/dip/static/js/453.4ef743f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6c2dc90.css",
-    "static/js/main.00421a46.js"
+    "static/css/main.a392462d.css",
+    "static/js/main.1ff83883.js"
   ]
 }
